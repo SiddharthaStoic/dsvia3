@@ -1,0 +1,1161 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>IA3 Important (B Section)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="65967f24-14e4-461c-9cc1-beee344ba9bc" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Hey_Machine_Learning_Logo.png"/></div><h1 class="page-title">IA3 Important (B Section)</h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesMultipleSelect"><path d="M1.91602 4.83789C2.44238 4.83789 2.87305 4.40723 2.87305 3.87402C2.87305 3.34766 2.44238 2.91699 1.91602 2.91699C1.38281 2.91699 0.952148 3.34766 0.952148 3.87402C0.952148 4.40723 1.38281 4.83789 1.91602 4.83789ZM5.1084 4.52344H14.3984C14.7607 4.52344 15.0479 4.23633 15.0479 3.87402C15.0479 3.51172 14.7607 3.22461 14.3984 3.22461H5.1084C4.74609 3.22461 4.45898 3.51172 4.45898 3.87402C4.45898 4.23633 4.74609 4.52344 5.1084 4.52344ZM1.91602 9.03516C2.44238 9.03516 2.87305 8.60449 2.87305 8.07129C2.87305 7.54492 2.44238 7.11426 1.91602 7.11426C1.38281 7.11426 0.952148 7.54492 0.952148 8.07129C0.952148 8.60449 1.38281 9.03516 1.91602 9.03516ZM5.1084 8.7207H14.3984C14.7607 8.7207 15.0479 8.43359 15.0479 8.07129C15.0479 7.70898 14.7607 7.42188 14.3984 7.42188H5.1084C4.74609 7.42188 4.45898 7.70898 4.45898 8.07129C4.45898 8.43359 4.74609 8.7207 5.1084 8.7207ZM1.91602 13.2324C2.44238 13.2324 2.87305 12.8018 2.87305 12.2686C2.87305 11.7422 2.44238 11.3115 1.91602 11.3115C1.38281 11.3115 0.952148 11.7422 0.952148 12.2686C0.952148 12.8018 1.38281 13.2324 1.91602 13.2324ZM5.1084 12.918H14.3984C14.7607 12.918 15.0479 12.6309 15.0479 12.2686C15.0479 11.9062 14.7607 11.6191 14.3984 11.6191H5.1084C4.74609 11.6191 4.45898 11.9062 4.45898 12.2686C4.45898 12.6309 4.74609 12.918 5.1084 12.918Z"></path></svg></span>Week</th><td><span class="selected-value select-value-color-green">Module 4</span></td></tr></tbody></table></header><div class="page-body"><h2 id="18b944ee-a5a4-45ea-97d6-464e51119b50" class="block-color-yellow_background">1. How can you incorporate mathematical expressions into Matplotlib plots? Provide an example of including an equation in a plot label. </h2><h3 id="6429355a-5aa3-43fb-9190-b2b59dd4577d" class="">Answer</h3><ul id="46035b4a-aaa5-493e-bc54-bbe9f1579c97" class="bulleted-list"><li style="list-style-type:disc">You can include mathematical expressions in Matplotlib plots using TeX, which is supported by Matplotlib. </li></ul><ul id="d8e93b8e-22f6-472b-85f8-c732417c6dc8" class="bulleted-list"><li style="list-style-type:disc">To do this, you wrap the mathematical expression in dollar signs. </li></ul><ul id="43a5c7b5-121c-455a-bb80-d2c44dc12b11" class="bulleted-list"><li style="list-style-type:disc">Here is an example of how to include an equation in a plot label:</li></ul><div id="038f8a53-bfcc-42f6-973e-50552d55011e" class="column-list"><div id="bd76e5dc-4e29-424b-b737-322e17c722ed" style="width:50%" class="column"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="01ddface-fe76-4b83-90c9-9eace375c1bd" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import numpy as np
+
+# Data
+x = np.linspace(0, 10, 100)
+y = np.cos(x)
+
+# Plot
+plt.plot(x, y)
+plt.xlabel(&#x27;$x$&#x27;)
+plt.ylabel(&#x27;$\cos(x)$&#x27;)
+plt.title(&#x27;Plot of $y = \cos(x)$&#x27;)
+plt.grid(True)
+plt.show()</code></pre></div><div id="079aa739-8fc2-4ab4-9495-d37b76bdfbc1" style="width:50%" class="column"><figure id="d647ec72-7390-4b95-a851-7be89809c0cb" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1.png"><img style="width:471.2384338378906px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1.png"/></a></figure></div></div><p id="5a2006f5-2175-4ed0-a6cb-b9144291fc4e" class="">
+</p><h2 id="30a9f77a-d57b-4c82-ae60-c2c089f5f558" class="block-color-yellow_background">2. Discuss the uses of line charts and provide common design practices to follow when creating line charts.</h2><h3 id="fd94501a-bdef-4f7f-91fe-32aef4be7ce8" class="">Answer</h3><h3 id="7f529b05-acf0-4ba8-857d-e1335ba6e069" class="block-color-blue_background">Uses</h3><ul id="40ceb8e3-3d3b-4c0b-ad34-1ea0a7cdce03" class="bulleted-list"><li style="list-style-type:disc">Line charts are great for <strong>comparing multiple variables</strong> and <strong>visualizing trends</strong> for both single as well as multiple variables, especially if your dataset has many time periods (more than 10).</li></ul><ul id="0d376756-2114-40a1-8f3d-75224a611a4d" class="bulleted-list"><li style="list-style-type:disc">For smaller time periods, vertical bar charts might be the better choice.</li></ul><h3 id="c8f23d85-d7bf-4102-9e5e-5e108acc9299" class="block-color-blue_background">Design Practices</h3><ul id="2b1be226-4952-4d75-b5c2-d3304710f216" class="bulleted-list"><li style="list-style-type:disc">Avoid too many lines per chart.</li></ul><ul id="b6f14740-cc77-4304-9937-0f1f8d87f01d" class="bulleted-list"><li style="list-style-type:disc">Adjust your scale so that the trend is clearly visible.</li></ul><p id="1b7e11ca-524a-45bd-bab8-119065ec4d8e" class="">Note: For plots with multiple variables, a legend should be given to describe each variable.</p><h3 id="27095597-f5be-4ece-b8e2-24eb2c129be9" class="block-color-blue_background">Example</h3><div id="8658fae7-39db-4238-ae2d-2c5a49c114fe" class="column-list"><div id="f2b1ed16-1c8d-4f60-adff-193ba256d76f" style="width:50%" class="column"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="32e4381f-8ac7-4a0f-9f73-16e80e217b71" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate sample data
+x = np.arange(2000, 2021)
+y1 = np.random.rand(len(x)) * 100
+y2 = np.random.rand(len(x)) * 100
+
+# Create the plot
+plt.figure(figsize=(10, 6))
+plt.plot(x, y1, label=&#x27;Variable 1&#x27;, marker=&#x27;o&#x27;)
+plt.plot(x, y2, label=&#x27;Variable 2&#x27;, marker=&#x27;s&#x27;)
+
+# Design practices
+plt.title(&#x27;Trend Analysis of Variables Over Time&#x27;)
+plt.xlabel(&#x27;Year&#x27;)
+plt.ylabel(&#x27;Value&#x27;)
+plt.legend()
+plt.grid(True)
+
+# Adjust the y-axis scale to make the trend visible
+plt.ylim(0, 120)
+
+# Show the plot
+plt.show()</code></pre></div><div id="b9230352-142b-46cb-82ab-eb21de490a4e" style="width:50%" class="column"><figure id="a66bb2e7-73d3-401b-bb29-0fc9312ee406" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%201.png"><img style="width:471.2384338378906px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%201.png"/></a></figure><p id="0f5411de-03f9-43db-960b-3f781d599bf5" class="">In this example:</p><ul id="2ad73010-89ac-4f79-9dd1-cfa2a54187cd" class="bulleted-list"><li style="list-style-type:disc">Two variables (<code>y1</code> and <code>y2</code>) are compared over a range of years (<code>x</code>).</li></ul><ul id="0089d0f1-93f0-41cd-a9b3-e2fd849b0d5a" class="bulleted-list"><li style="list-style-type:disc">Markers (<code>&#x27;o&#x27;</code> for <code>y1</code> and <code>&#x27;s&#x27;</code> for <code>y2</code>) are used to clearly distinguish data points.</li></ul><ul id="c6632851-615f-499b-83e4-c54218b062d7" class="bulleted-list"><li style="list-style-type:disc">The legend helps to differentiate between the two variables.</li></ul><ul id="e074ef23-070c-4a23-bbac-994f2cc38aef" class="bulleted-list"><li style="list-style-type:disc">The y-axis scale is adjusted to range from 0 to 120 to ensure the trends are clearly visible.</li></ul><ul id="6fa64638-9ff7-4c70-998a-7b9121cfab1c" class="bulleted-list"><li style="list-style-type:disc">Grid lines are added for better readability.</li></ul></div></div><p id="1f8096c1-0112-42ee-ad98-a5362b595f25" class="">
+</p><h2 id="e9173517-d5db-4907-8e81-266933b18114" class="block-color-yellow_background">3. What are some common design practices to follow when creating bar charts? Include at least two practices and explain their importance.</h2><h3 id="6da0c2c4-14dd-4592-93cd-2d4af1ca3301" class="">Answer</h3><h3 id="eb6adab1-a9f4-40da-8c37-d2e4f3258616" class="block-color-blue_background">Start the Axis at Zero</h3><ul id="0e18c093-2a7a-4a3f-97ae-50e8dc352314" class="bulleted-list"><li style="list-style-type:disc"><strong>Importance</strong>: Starting the numerical axis at zero ensures that the length of the bars accurately represents the values. If the axis starts at a value other than zero, it can be misleading and make small differences appear more significant than they actually are.</li></ul><ul id="6cf84097-c273-4c18-b32e-031764770ec3" class="bulleted-list"><li style="list-style-type:disc"><strong>Explanation</strong>: When the axis does not start at zero, the visual representation can distort the actual differences between categories, leading to misinterpretation of the data.</li></ul><h3 id="c967f5c8-258e-492c-882d-3e53a81e1059" class="block-color-blue_background">Use Horizontal Labels</h3><ul id="1abd9936-e6e9-4382-a87f-a5b4e0857615" class="bulleted-list"><li style="list-style-type:disc"><strong>Importance</strong>: Horizontal labels are easier to read and help in making the chart more accessible and understandable.</li></ul><ul id="0937419f-ad33-4af1-8133-3544303fc0a8" class="bulleted-list"><li style="list-style-type:disc"><strong>Explanation</strong>: When the number of bars is small, keeping labels horizontal improves readability. If there are many bars and horizontal labels would overlap, you can rotate the labels to maintain clarity.</li></ul><h3 id="fb6cc6c7-3d17-47f7-a3fe-03c1820c2f89" class="block-color-blue_background">Example</h3><div id="9617749a-e7c3-41ee-84ed-814f5fb0ad8f" class="column-list"><div id="ca1c2477-a7d5-4ae8-81bf-43b4d99771f8" style="width:50%" class="column"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="ed289cd1-3eab-48d1-b085-883e696d4612" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+
+# Data
+categories = [&#x27;Category A&#x27;, &#x27;Category B&#x27;, 
+&#x27;Category C&#x27;, &#x27;Category D&#x27;]
+values = [23, 45, 56, 78]
+
+# Create the bar chart
+plt.figure(figsize=(10, 6))
+plt.bar(categories, values, color=&#x27;skyblue&#x27;)
+
+# Design practices
+plt.xlabel(&#x27;Categories&#x27;)
+plt.ylabel(&#x27;Values&#x27;)
+plt.title(&#x27;Bar Chart Example&#x27;)
+plt.ylim(0, 100)  # Ensure the y-axis starts at zero
+plt.xticks(rotation=0)  # Horizontal labels
+
+# Show the plot
+plt.show()</code></pre></div><div id="aea86dcd-2d74-4562-8feb-37ddf21a987a" style="width:50%" class="column"><figure id="6a321ee3-ee0c-4d3f-b240-ae7e6031d9b5" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%202.png"><img style="width:1000px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%202.png"/></a></figure><p id="5e74abf2-d539-496c-830f-eae9043b86b5" class="">In this example:</p><ul id="74f62eea-3ccd-4a1b-a32a-91ec1fb636be" class="bulleted-list"><li style="list-style-type:disc">The y-axis starts at zero to avoid misleading representations.</li></ul><ul id="d4d94042-885e-4a11-bc7f-c4135859d91e" class="bulleted-list"><li style="list-style-type:disc">The category labels are kept horizontal for better readability.</li></ul><ul id="327a305d-b7c8-4853-8ce4-06440fd4842b" class="bulleted-list"><li style="list-style-type:disc">The chart has a clear title and axis labels, which are essential for understanding the context of the data.</li></ul></div></div><p id="ae73c6c3-ce13-4dc0-ba80-e0d90c8a34f8" class="">
+</p><h2 id="5affc4d0-ec54-4f7d-bdda-44687473d9cb" class="block-color-yellow_background">4. Explain how basic image operations, such as resizing and rotating, can be performed using Matplotlib. Provide a practical example of when these operations might be necessary.</h2><h3 id="7350e09d-14db-4c74-98bf-583c278bae3f" class="">Answer</h3><h3 id="ef015c4e-228e-463b-93a1-d7d54d32d20a" class="block-color-blue_background">Basic Image Operations in Matplotlib</h3><p id="5f061f1e-35c6-4b0e-94d7-a8fb2d868054" class="">Basic image operations such as resizing and rotating can be performed using Matplotlib. These operations are often necessary in data visualization and image processing tasks, such as preparing images for machine learning models or creating visual content for presentations.</p><h3 id="f4d0d89f-9345-4609-a069-653f3a59f241" class="">Resizing Images</h3><p id="3e7e3447-b179-4058-8bef-82aaeb34306b" class="">Resizing an image changes its dimensions. This can be useful when you need to <strong>standardize the size of images</strong> for a consistent presentation or to reduce the computational load for processing.</p><h3 id="8ca8c061-0085-4537-8b2e-9d7b71e418c7" class="">Rotating Images</h3><p id="8d16ca68-42a8-4508-8d21-9a30ae4f7d56" class="">Rotating an image can help align it correctly for analysis or presentation. For instance, if an image is captured at an angle, rotating it can help bring it to a more understandable perspective.</p><h3 id="ebf7eee3-222c-4693-bf4e-e5c7ee5f639a" class="block-color-blue_background">Example</h3><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="c11504c6-7ebb-4c90-82bf-810dee6933e4" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import numpy as np
+from skimage.transform import resize, rotate
+
+# Load an image
+img = mpimg.imread(&#x27;Untitled.png&#x27;)
+
+# Resize the image
+img_resized = resize(img, (100, 100))
+
+# Rotate the image
+img_rotated = rotate(img, 45)
+
+# Plot the original, resized, and rotated images
+fig, axes = plt.subplots(1, 3, figsize=(15, 5))
+
+# Original image
+axes[0].imshow(img)
+axes[0].set_title(&#x27;Original Image&#x27;)
+axes[0].axis(&#x27;off&#x27;)
+
+# Resized image
+axes[1].imshow(img_resized)
+axes[1].set_title(&#x27;Resized Image&#x27;)
+axes[1].axis(&#x27;off&#x27;)
+
+# Rotated image
+axes[2].imshow(img_rotated)
+axes[2].set_title(&#x27;Rotated Image&#x27;)
+axes[2].axis(&#x27;off&#x27;)
+
+plt.show()</code></pre><figure id="3cce2562-2195-4a6d-8e9c-68cb8aee67ca" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%203.png"><img style="width:1283px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%203.png"/></a></figure><h3 id="4a811f00-f234-4ccf-b12b-96556ad02f62" class="block-color-blue_background">Applications</h3><ul id="e029fc7f-ef66-4d65-9253-846b00e973fe" class="bulleted-list"><li style="list-style-type:disc"><strong>Data Preparation for Machine Learning</strong>: Standardizing image sizes by resizing can help in preparing a consistent dataset for training machine learning models.</li></ul><ul id="261627a0-46bf-4ff0-b1f9-92e9e377838b" class="bulleted-list"><li style="list-style-type:disc"><strong>Image Alignment</strong>: Rotating images to correct orientations is crucial for accurate image analysis, especially in fields like medical imaging or satellite imagery.</li></ul><p id="12036c08-2a24-425a-9119-2825605e876e" class="">
+</p><h2 id="49ef852b-f106-4931-b259-7c937641b87b" class="block-color-yellow_background">5. Describe the process of setting a tight layout in Matplotlib. Why is it important, and how does it improve the appearance of plots?</h2><h3 id="2f28b650-6e0c-4289-a6ee-d86f98f6401b" class="">Answer</h3><h3 id="b11ec29f-d141-4022-919b-cf62089a3ab2" class="block-color-blue_background"><strong>Process of Setting a Tight Layout in Matplotlib</strong></h3><ul id="8d372e27-c270-4264-ba23-1eae987836ca" class="bulleted-list"><li style="list-style-type:disc">In Matplotlib, setting a tight layout is achieved using the <code>plt.tight_layout()</code> function. </li></ul><ul id="564c83e0-19e1-46e3-809a-e09b3724affb" class="bulleted-list"><li style="list-style-type:disc">This function adjusts the subplot parameters to provide <strong>sufficient padding between the edges of the figure and the subplots</strong>, as well as <strong>between adjacent subplots</strong>. </li></ul><ul id="307e3d66-8ad4-4add-97be-3b5e8148f1f7" class="bulleted-list"><li style="list-style-type:disc">This adjustment ensures that the elements within the plots do not overlap, leading to a cleaner and more readable visualization.</li></ul><h3 id="c1218a52-3bb1-4517-a289-de88bcf7994a" class="block-color-blue_background"><strong>Importance of Setting a Tight Layout in Matplotlib</strong></h3><ul id="4ba52595-223c-4d31-814a-748687e6d034" class="bulleted-list"><li style="list-style-type:disc"><strong>Prevents Overlapping</strong>: Ensures that titles, labels, and plot elements do not overlap, making the chart easier to read and interpret.</li></ul><ul id="7f762177-5dae-427b-b5f2-26011f0c0c53" class="bulleted-list"><li style="list-style-type:disc"><strong>Improves Aesthetics</strong>: Provides a visually appealing layout where all elements are neatly arranged within the figure boundaries.</li></ul><ul id="88b4f92f-2023-4f47-977f-3a30d9a6e0f2" class="bulleted-list"><li style="list-style-type:disc"><strong>Enhances Clarity</strong>: Ensures that each subplot is distinct and clear, facilitating better comparison and analysis of data.</li></ul><h3 id="7c7fe66e-88e5-4cfc-8c72-983ebea0a623" class="block-color-blue_background">Example</h3><div id="4db09d80-44a6-4934-9b09-d323ff85ef79" class="column-list"><div id="ecf0af33-cc12-4dbf-9b79-f1f57215f10d" style="width:50%" class="column"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="5e5998fc-1f1e-4631-a0c3-0288bb32a882" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate sample data
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+y2 = np.cos(x)
+
+# Create subplots
+fig, axes = plt.subplots(2, 2)
+
+# Plot data
+axes[0, 0].plot(x, y1)
+axes[0, 0].set_title(&#x27;Sine Function&#x27;)
+
+axes[0, 1].plot(x, y2)
+axes[0, 1].set_title(&#x27;Cosine Function&#x27;)
+
+axes[1, 0].plot(x, -y1)
+axes[1, 0].set_title(&#x27;Negative Sine&#x27;)
+
+axes[1, 1].plot(x, -y2)
+axes[1, 1].set_title(&#x27;Negative Cosine&#x27;)
+
+# Apply tight layout
+plt.tight_layout()
+
+# Show plot
+plt.show()</code></pre></div><div id="da161d34-23b8-4511-84c2-453bc7cb6320" style="width:50%" class="column"><figure id="f39c870b-406f-43ca-901f-c02a67e89e09" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%204.png"><img style="width:640px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%204.png"/></a></figure><figure id="d17b2593-f6fc-4d62-a149-bf6427abdc09" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%205.png"><img style="width:471.2384338378906px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%205.png"/></a></figure></div></div><p id="6a6cf4e6-e5c6-42ed-a31c-d52abd344b3e" class="">
+</p><h2 id="d870fbfd-6e73-4374-ae09-38600893605b" class="block-color-yellow_background">6. Compare radar charts and scatter plots in terms of their uses and typical applications. Provide examples for each.</h2><h3 id="1faae77f-800b-450e-a852-e00172cd3c0c" class="">Answer</h3><table id="cd51b50b-9177-41f2-b377-4c4a5b831514" class="simple-table"><thead class="simple-table-header"><tr id="033fd0f6-858a-4b44-8936-9dcde1dde9f9"><th id="XrNA" class="simple-table-header-color simple-table-header" style="width:325.66668701171875px">Aspect</th><th id=";rqI" class="simple-table-header-color simple-table-header" style="width:325.66668701171875px">Radar Charts</th><th id="&gt;_w[" class="simple-table-header-color simple-table-header" style="width:325.66668701171875px">Scatter Plots</th></tr></thead><tbody><tr id="6a5b3c2d-4bbc-4801-8c1d-921186b5e7c1"><th id="XrNA" class="simple-table-header-color simple-table-header" style="width:325.66668701171875px">Uses</th><td id=";rqI" class="" style="width:325.66668701171875px">Comparing multiple quantitative variables for a single group or multiple groups.</td><td id="&gt;_w[" class="" style="width:325.66668701171875px">Visualizing the correlation between two numerical variables; plotting relationships between multiple groups or categories using different colors.</td></tr><tr id="ac8c329a-2d10-4914-929c-bca2ce59d3af"><th id="XrNA" class="simple-table-header-color simple-table-header" style="width:325.66668701171875px">Typical Applications</th><td id=";rqI" class="" style="width:325.66668701171875px">Employee skill comparison; Performance analysis of departments.</td><td id="&gt;_w[" class="" style="width:325.66668701171875px">Height and weight correlation; Animal analysis (e.g., body mass vs. longevity).</td></tr><tr id="3f4715fc-42b9-4a5a-8a94-0f6a616c9959"><th id="XrNA" class="simple-table-header-color simple-table-header" style="width:325.66668701171875px">Design Practices</th><td id=";rqI" class="" style="width:325.66668701171875px">Display 10 factors or fewer on a single radar chart; Use faceting for multiple variables/groups.</td><td id="&gt;_w[" class="" style="width:325.66668701171875px">Start both axes at zero; Use contrasting colors for data points; Avoid using symbols for multiple groups or categories</td></tr><tr id="826c5ffd-30e2-48ed-9eed-16ce74e03ba5"><th id="XrNA" class="simple-table-header-color simple-table-header" style="width:325.66668701171875px">Example</th><td id=";rqI" class="" style="width:325.66668701171875px">Comparing the skills of employees across different attributes like efficiency, quality, and commitment.</td><td id="&gt;_w[" class="" style="width:325.66668701171875px">Correlating body mass and maximum longevity for various animals</td></tr></tbody></table><h3 id="7134bbb3-1c0b-4358-a8f6-f525264e7644" class="block-color-blue_background">Radar Charts</h3><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="0df396f1-3659-4034-b912-963c12bb01e1" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample data
+labels = [&#x27;Efficiency&#x27;, &#x27;Quality&#x27;, &#x27;Commitment&#x27;, &#x27;Conduct&#x27;, &#x27;Cooperation&#x27;]
+stats = [4, 5, 3, 4, 4]
+
+# Create a radar chart
+angles = np.linspace(0, 2 * np.pi, len(labels), endpoint=False).tolist()
+stats = stats + stats[:1]
+angles += angles[:1]
+
+fig, ax = plt.subplots(figsize=(6, 6), subplot_kw=dict(polar=True))
+ax.fill(angles, stats, color=&#x27;blue&#x27;, alpha=0.25)
+ax.plot(angles, stats, color=&#x27;blue&#x27;, linewidth=2)
+ax.set_yticklabels([])
+ax.set_xticks(angles[:-1])
+ax.set_xticklabels(labels)
+
+plt.show()</code></pre><figure id="2a1428ad-bb2c-4e16-9a89-a3536b817601" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%206.png"><img style="width:480px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%206.png"/></a></figure><p id="ccc9674c-8f6e-4c03-8b35-3bbcdee5547f" class="">
+</p><h3 id="07606684-10d3-4b9a-8bcc-0bcd7ad3b2be" class="block-color-blue_background">Scatter Plots</h3><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="f934c477-b479-438c-93e4-1f104a3f6087" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample data
+np.random.seed(0)
+x = np.random.rand(50) * 100
+y = x + (np.random.rand(50) * 50)
+
+# Create a scatter plot
+plt.figure(figsize=(10, 6))
+plt.scatter(x, y, color=&#x27;blue&#x27;, alpha=0.5)
+plt.title(&#x27;Scatter Plot of X vs Y&#x27;)
+plt.xlabel(&#x27;X&#x27;)
+plt.ylabel(&#x27;Y&#x27;)
+plt.grid(True)
+
+plt.show()</code></pre><figure id="960ec696-8aa2-438f-a316-1e1bebaf56bd" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%207.png"><img style="width:672px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%207.png"/></a></figure><p id="46076ac2-78df-454a-8cbb-3fb4cb5bd148" class="">
+</p><h2 id="a531306c-0cda-4057-8099-157ab9087917" class="block-color-yellow_background">7. Describe the advantages and disadvantages of different file formats (PNG, PDF, SVG) for saving figures in Matplotlib. When might each format be preferable?</h2><h3 id="6bead244-a967-4767-a97b-270bcd04f893" class="">Answer</h3><h3 id="39db6747-6eb8-4ab1-b498-fbc5b89ca144" class="block-color-blue_background">PNG</h3><h3 id="cae096e2-a3af-4f6b-926d-77b0083a5400" class="">Advantages</h3><ul id="ce8eb93a-b045-416a-b6ca-5d8560db1b25" class="bulleted-list"><li style="list-style-type:disc"><strong>Lossless Compression</strong>: PNG files use lossless compression, which means that no data is lost when the file is compressed. This ensures high-quality images.</li></ul><ul id="fa444b29-f008-4e77-91d0-2c528bb69f89" class="bulleted-list"><li style="list-style-type:disc"><strong>Transparency Support</strong>: PNG supports transparent backgrounds, which can be useful for overlaying images on different backgrounds without a visible rectangle.</li></ul><ul id="664c4219-1c1b-4fd9-942a-ca0930901cd3" class="bulleted-list"><li style="list-style-type:disc"><strong>Wide Compatibility</strong>: PNG is widely supported across various platforms and software, making it a versatile choice for sharing and displaying images.</li></ul><h3 id="58cf667e-3197-41c3-9b7d-0069bd89c951" class="">Disadvantages</h3><ul id="268fc252-95d8-4835-a299-d862c23e682f" class="bulleted-list"><li style="list-style-type:disc"><strong>Large File Size</strong>: Due to lossless compression, PNG files can be relatively large, which might be an issue when storage space or bandwidth is limited.</li></ul><ul id="b0a3824d-72de-48af-ac95-9e3622e168d2" class="bulleted-list"><li style="list-style-type:disc"><strong>Not Suitable for Print</strong>: PNG is not the best choice for printing purposes as it is a raster format, which can result in pixelation when resized.</li></ul><h3 id="3986023e-347c-475d-903b-1620b2f97f51" class="">When to Use</h3><p id="2551ff7e-c0f3-4aa0-baaf-f1c6e5c36a54" class="">Use PNG for web graphics, presentations, and any situation where high-quality images with transparency are needed.</p><h3 id="bd723306-7f50-46f0-905c-2e2a787f613a" class="block-color-blue_background">PDF</h3><h3 id="f37237a2-f038-4bfc-b420-a9d7c978440b" class="">Advantages</h3><ul id="ee89db68-792f-4e18-9781-bfbf0f8b99f1" class="bulleted-list"><li style="list-style-type:disc"><strong>Scalability</strong>: PDF files are vector-based, meaning they can be scaled to any size without losing quality. This makes them ideal for printing and publications.</li></ul><ul id="743862c4-aa50-49b6-a095-26fe182bd011" class="bulleted-list"><li style="list-style-type:disc"><strong>Multi-Page Support</strong>: PDFs can contain multiple pages, making them useful for reports and documents that include several figures and plots.</li></ul><ul id="2bcf2eec-db11-4727-b0d5-8a51c4d92777" class="bulleted-list"><li style="list-style-type:disc"><strong>Embedding Fonts and Media</strong>: PDFs can embed fonts, ensuring that the document appears the same on all devices. They can also include interactive elements like hyperlinks.</li></ul><h3 id="a6042ba0-61da-4e97-a5b7-236579cdfeb3" class="">Disadvantages</h3><ul id="83c843b1-c3cf-4ff2-bd98-33b587657fe7" class="bulleted-list"><li style="list-style-type:disc"><strong>File Size</strong>: PDF files can become quite large, especially if they contain many high-resolution images.</li></ul><ul id="e010c17d-3a0e-46f6-b5aa-e7b2af3dd398" class="bulleted-list"><li style="list-style-type:disc"><strong>Complexity</strong>: Creating and editing PDFs can be more complex compared to simpler image formats.</li></ul><h3 id="322d0995-a342-4f75-81a0-fbdf4c45e5cc" class="">When to Use</h3><p id="4a320ba1-6201-42d8-9b68-76a9695154be" class="">Use PDF for printable documents, reports, and when you need to ensure the figure maintains its quality at various sizes.</p><h3 id="ac6f8727-989c-47fc-be95-4ca588822c96" class="block-color-blue_background">SVG</h3><h3 id="b82f2fd8-7a14-40fd-a040-a835a4b608e2" class="">Advantages</h3><ul id="0807f8f8-6e11-46d0-b903-95fce8dd3ae8" class="bulleted-list"><li style="list-style-type:disc"><strong>Scalability</strong>: Like PDFs, SVGs are vector-based and can be scaled infinitely without losing quality.</li></ul><ul id="2b65620e-6958-48de-b0aa-9d0cb9dd5f2f" class="bulleted-list"><li style="list-style-type:disc"><strong>Editability</strong>: SVG files can be edited using text editors or vector graphic editors like Adobe Illustrator or Inkscape, making them highly customizable.</li></ul><ul id="ba33997a-dd77-4114-abff-ea6fdd4eefb4" class="bulleted-list"><li style="list-style-type:disc"><strong>Small File Size</strong>: SVGs generally have smaller file sizes compared to raster images, especially for complex graphics.</li></ul><h3 id="d14f3853-f90c-45d0-ae8e-c46f6cc4aaa0" class="">Disadvantages</h3><ul id="6b784523-37aa-408f-8a73-546fd233ca26" class="bulleted-list"><li style="list-style-type:disc"><strong>Browser Compatibility Issues</strong>: While modern browsers support SVG, there might still be compatibility issues with older browsers or specific applications.</li></ul><ul id="9d96e6f1-bf27-4e4d-b8d1-7e06d83b12e8" class="bulleted-list"><li style="list-style-type:disc"><strong>Complexity</strong>: For very complex images, SVGs can become complicated to manage and render.</li></ul><h3 id="70fe1df1-41db-4d24-8af9-7cc5f476ba43" class="">When to Use</h3><p id="d780fed4-7527-4a14-b70e-696f546e581f" class="">Use SVG for web graphics, logos, and any application where scalable, high-quality graphics are needed.</p><p id="42978fa6-f952-490b-a511-e12fa07cdf3b" class="">
+</p><h2 id="59c61c62-03c2-44b0-ac3f-14b8c3032be3" class="block-color-yellow_background">8. Discuss the design practices for creating effective radar charts. What considerations should be made to ensure clarity and accuracy?</h2><h3 id="85a95f72-d70c-4042-b29e-48eb0ce73298" class="">Answer</h3><h3 id="094db4e0-96c3-4851-b209-2954f4a4d5ba" class="block-color-blue_background">Limit the Number of Variables</h3><ul id="507fffba-40f3-4fa9-a1a8-b07be15a5161" class="bulleted-list"><li style="list-style-type:disc"><strong>Recommendation</strong>: Try to display 10 factors or fewer on a single radar chart.</li></ul><ul id="5f11be07-36f0-4690-b618-5210d3912223" class="bulleted-list"><li style="list-style-type:disc"><strong>Importance</strong>: This practice helps maintain readability. Including too many variables can make the chart cluttered and difficult to interpret.</li></ul><h3 id="44aa92c6-b0ed-4a4c-931f-985c13755f4d" class="block-color-blue_background">Use Faceting for Multiple Groups</h3><ul id="3bad822b-c679-4f5c-bc2c-177aea98db57" class="bulleted-list"><li style="list-style-type:disc"><strong>Recommendation</strong>: Use faceting (displaying each variable in a separate plot) for multiple variables/groups.</li></ul><ul id="8ce0973d-9b05-4ef6-b425-3f06b1563cd7" class="bulleted-list"><li style="list-style-type:disc"><strong>Importance</strong>: Faceting helps maintain clarity by separating different groups into individual charts, making it easier to compare multiple variables without overcrowding a single chart.</li></ul><h3 id="f28a380e-1cd0-4a70-8151-e634572e9e41" class="block-color-blue_background">Consistent Scales</h3><ul id="5177f54e-c0ff-49be-b0b4-1f32bdefb0b1" class="bulleted-list"><li style="list-style-type:disc"><strong>Recommendation</strong>: Ensure all axes are arranged radially, starting at the center with equal distances between each other, and have the same scale.</li></ul><ul id="9a229ae2-9a08-4783-9a72-0458b0e9f7ab" class="bulleted-list"><li style="list-style-type:disc"><strong>Importance</strong>: Consistent scales across all axes provide a uniform basis for comparison, ensuring that the visual representation of data is accurate and not misleading.</li></ul><h3 id="43024ce7-93ce-4860-8bb4-6fdd6c00c601" class="block-color-blue_background">Clear Labels and Titles</h3><ul id="f573bee5-10d0-4002-92a2-bc2bc5514f95" class="bulleted-list"><li style="list-style-type:disc"><strong>Recommendation</strong>: Add clear labels and titles to the chart.</li></ul><ul id="a30565c6-6ea1-49d1-924e-683aa56e46f8" class="bulleted-list"><li style="list-style-type:disc"><strong>Importance</strong>: Labels and titles help the audience understand what each axis represents and what the chart as a whole is depicting, thereby improving interpretability.</li></ul><h3 id="64ec2fce-cb03-4b3e-a262-06135b868bd5" class="block-color-blue_background">Distinct Colours for Different Groups</h3><ul id="cb55f182-53bc-47ef-96f3-a64ba34308fb" class="bulleted-list"><li style="list-style-type:disc"><strong>Recommendation</strong>: Use different colors for different groups within the radar chart.</li></ul><ul id="ced83583-f81e-4172-bc9f-3183ee929f61" class="bulleted-list"><li style="list-style-type:disc"><strong>Importance</strong>: This helps to distinguish between the various groups or variables being compared, making the chart more accessible and easier to read.</li></ul><p id="3d82e804-7bc7-4968-a29b-a39e95e0389d" class="">
+</p><h3 id="1d952a30-63d1-4670-9583-4ae3ded60a30" class="">Example</h3><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="47e08109-ad67-47fb-aaed-c45138c66b2b" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample data
+labels = [&#x27;Efficiency&#x27;, &#x27;Quality&#x27;, &#x27;Commitment&#x27;, &#x27;Conduct&#x27;, &#x27;Cooperation&#x27;]
+stats = [4, 5, 3, 4, 4]
+stats2 = [5, 4, 4, 5, 3]
+
+# Number of variables
+num_vars = len(labels)
+
+# Compute angle of each axis
+angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
+
+# Complete the loop
+stats += stats[:1]
+stats2 += stats2[:1]
+angles += angles[:1]
+
+# Plot
+fig, ax = plt.subplots(figsize=(6, 6), subplot_kw=dict(polar=True))
+
+ax.fill(angles, stats, color=&#x27;blue&#x27;, alpha=0.25)
+ax.fill(angles, stats2, color=&#x27;red&#x27;, alpha=0.25)
+
+ax.plot(angles, stats, color=&#x27;blue&#x27;, linewidth=2, label=&#x27;Employee A&#x27;)
+ax.plot(angles, stats2, color=&#x27;red&#x27;, linewidth=2, label=&#x27;Employee B&#x27;)
+
+# Add labels
+ax.set_yticklabels([])
+ax.set_xticks(angles[:-1])
+ax.set_xticklabels(labels)
+
+# Add title and legend
+ax.set_title(&#x27;Employee Performance Comparison&#x27;, size=20, color=&#x27;black&#x27;, y=1.1)
+ax.legend(loc=&#x27;upper right&#x27;, bbox_to_anchor=(1.1, 1.1))
+
+plt.show()</code></pre><figure id="8cfb9b93-46ca-4a09-aed6-a642f8c9c100" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%208.png"><img style="width:599.9884643554688px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%208.png"/></a></figure><p id="cf40a98b-ab9f-403b-bf28-e3c7dba2c895" class="">
+</p><h2 id="7d7524cd-c947-4eb2-9ff7-607e943b1b51" class="block-color-yellow_background">9. What are the benefits of using GridSpec for subplot layout in Matplotlib? Provide an example scenario where GridSpec would be particularly useful.</h2><h3 id="da8986b0-23fa-495c-bcd3-fe777f8c7ce1" class="">Answer</h3><ul id="ee7324e5-8e49-4a61-8d49-4eccbc27702c" class="bulleted-list"><li style="list-style-type:disc">GridSpec in Matplotlib provides a highly flexible and powerful way to <strong>arrange subplots within a figure</strong>. </li></ul><ul id="3710f08d-90c7-4900-abe5-813056bc922d" class="bulleted-list"><li style="list-style-type:disc">It allows precise control over the positioning and size of subplots, enabling the creation of complex and customized layouts.</li></ul><h3 id="e727e2ba-6c2c-4e14-b719-2e96471c5a30" class="block-color-blue_background">Benefits of Using GridSpec</h3><h3 id="93db6e03-fa6e-4ae9-ba4a-b2b15cdd9791" class="">Flexible Layouts</h3><ul id="92c9a608-2209-47f6-9dc4-0a99d2254af6" class="bulleted-list"><li style="list-style-type:disc"><strong>Description</strong>: GridSpec allows for creating subplots of varying sizes and positions, not restricted to a uniform grid. This flexibility is beneficial for creating intricate layouts where certain subplots need to span multiple grid cells.</li></ul><ul id="0d795f99-6a07-457a-b5eb-a3987ac4f0de" class="bulleted-list"><li style="list-style-type:disc"><strong>Importance</strong>: This is particularly useful when different visualizations require more space or a specific arrangement that a simple grid cannot provide.</li></ul><h3 id="85a479ab-17ca-405c-a4b7-5ec8b53f0815" class="">Precise Control</h3><ul id="78908e54-e118-46f3-914c-1d5f29346bfe" class="bulleted-list"><li style="list-style-type:disc"><strong>Description</strong>: GridSpec provides precise control over subplot positioning by allowing the specification of row and column spans. This control enables better management of subplot sizes and positions, avoiding overlaps and ensuring a clean layout.</li></ul><ul id="584a48bf-23f3-475d-aa6c-3e0a5748f52c" class="bulleted-list"><li style="list-style-type:disc"><strong>Importance</strong>: Precise control over subplot placement ensures that all elements are appropriately sized and positioned, which is crucial for maintaining clarity and readability in complex visualizations.</li></ul><h3 id="60e38d84-cc0c-44c3-a2af-06dead49dc43" class="">Integration with Constrained Layouts</h3><ul id="36468144-00ad-4412-b48c-8072946bb23a" class="bulleted-list"><li style="list-style-type:disc"><strong>Description</strong>: GridSpec works well with constrained layouts, which automatically adjust the positions of subplots to fit within the figure area without overlapping.</li></ul><ul id="49de7171-60c5-4a3f-9f19-e111c3c1b817" class="bulleted-list"><li style="list-style-type:disc"><strong>Importance</strong>: Combining GridSpec with constrained layouts helps to create visually appealing and well-organized figures, especially when dealing with multiple subplots.</li></ul><h3 id="d7a24284-f2e6-4041-9b33-6775c8255bf2" class="block-color-blue_background">Example Scenario</h3><p id="324465eb-a876-4311-82a3-7a595748d753" class=""><strong>Scenario</strong>: Creating a dashboard with a main plot and several smaller, auxiliary plots.</p><p id="4d3ee247-ce6f-4ea9-8ccd-cf34dfa8e9b9" class="">In this scenario, you might want the <strong>main plot to occupy a larger portion</strong> of the figure while the <strong>auxiliary plots are smaller and positioned around the main plot</strong>. </p><p id="997140d6-8158-4788-8c6e-badf68a51616" class="">GridSpec allows for this by specifying different spans for the main plot and the auxiliary plots.</p><p id="f8cb0d94-4d52-429b-8642-00a47aabc6ea" class="">
+</p><div id="aee92ba0-926f-4978-8000-128b12440a18" class="column-list"><div id="f630b445-88ff-44ef-8993-00b576ee1caf" style="width:50%" class="column"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="692f336f-8879-4fd8-b26d-d8a1d2798ba6" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
+import numpy as np
+
+# Sample data
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+y2 = np.cos(x)
+y3 = np.sin(2 * x)
+y4 = np.cos(2 * x)
+
+# Create GridSpec
+fig = plt.figure(figsize=(10, 8))
+gs = gridspec.GridSpec(3, 3)
+
+# Main plot
+ax1 = fig.add_subplot(gs[:2, :2])
+ax1.plot(x, y1)
+ax1.set_title(&#x27;Main Plot&#x27;)
+
+# Auxiliary plots
+ax2 = fig.add_subplot(gs[0, 2])
+ax2.plot(x, y2, &#x27;r&#x27;)
+ax2.set_title(&#x27;Aux Plot 1&#x27;)
+
+ax3 = fig.add_subplot(gs[1, 2])
+ax3.plot(x, y3, &#x27;g&#x27;)
+ax3.set_title(&#x27;Aux Plot 2&#x27;)
+
+ax4 = fig.add_subplot(gs[2, :])
+ax4.plot(x, y4, &#x27;b&#x27;)
+ax4.set_title(&#x27;Aux Plot 3&#x27;)
+
+# Adjust layout
+plt.tight_layout()
+plt.show()
+</code></pre></div><div id="3b596b70-1ef6-43db-bd22-90a85d69c3f7" style="width:50%" class="column"><figure id="d834459b-a7fd-4498-92d8-dc352e339135" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%209.png"><img style="width:471.2384338378906px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%209.png"/></a></figure><p id="05689c76-fad0-4fa0-ab59-60150eb15de8" class="">
+</p><p id="ae9a2470-1766-4928-9394-30603c04f091" class="">In this example:</p><ul id="edc29aad-be9e-4e60-85cc-42d9d01e36d0" class="bulleted-list"><li style="list-style-type:disc"><strong>Main Plot</strong>: Occupies the top-left 2x2 grid cells, providing ample space for detailed visualization.</li></ul><ul id="9d6448f6-408a-4426-9c62-53bf46477717" class="bulleted-list"><li style="list-style-type:disc"><strong>Auxiliary Plots</strong>: Placed in the remaining grid cells, each occupying a specific area without overlapping.</li></ul><ul id="9ab15750-9d93-417c-9910-15993656bd07" class="bulleted-list"><li style="list-style-type:disc"><strong>Layout Adjustment</strong>: <code>plt.tight_layout()</code> ensures that all subplots fit well within the figure, maintaining clarity and avoiding overlap.</li></ul></div></div><p id="423174c1-013b-489e-bbf1-1b4478c847c7" class="">
+</p><h2 id="00f0286c-d657-4d8b-b24f-828c4ffa9a39" class="block-color-yellow_background">10. Demonstrate how to create a plot with multiple subplots using Matplotlib. Include different chart types such as histograms, line charts, and scatter plots in the subplots.</h2><h3 id="672a12c4-0b74-4778-8f7e-84644c31c83c" class="">Answer</h3><p id="1c15d942-b26e-4d93-9535-2716c9a22e6e" class="">Below is an example demonstrating how to create a plot with these different chart types.</p><div id="3e303fc0-47b2-48ae-91e8-fd6e2fe1f1e4" class="column-list"><div id="4177d3a5-1a2c-4e86-bda8-000699f286e1" style="width:50%" class="column"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="6235558f-2acd-4795-b01c-ceffa1aaf5f5" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
+import numpy as np
+
+# Sample data
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+data = np.random.randn(1000)
+
+# Create GridSpec
+fig = plt.figure(figsize=(12, 10))
+gs = gridspec.GridSpec(3, 3)
+
+# Main plot
+ax1 = fig.add_subplot(gs[:2, :2])
+ax1.plot(x, y)
+ax1.set_title(&#x27;Main Plot&#x27;)
+
+# Auxiliary plots
+ax2 = fig.add_subplot(gs[0, 2])
+ax2.plot(x, np.cos(x), &#x27;r&#x27;)
+ax2.set_title(&#x27;Aux Plot 1&#x27;)
+
+ax3 = fig.add_subplot(gs[1, 2])
+ax3.hist(data, bins=30, color=&#x27;g&#x27;, alpha=0.75)
+ax3.set_title(&#x27;Aux Plot 2&#x27;)
+
+ax4 = fig.add_subplot(gs[2, :])
+ax4.scatter(x, y, color=&#x27;b&#x27;, alpha=0.75)
+ax4.set_title(&#x27;Aux Plot 3&#x27;)
+
+# Adjust layout
+plt.tight_layout()
+plt.show()</code></pre></div><div id="c36bfec6-d580-4b3a-a88e-b458714b683e" style="width:50%" class="column"><figure id="2df57a79-b355-4b1a-8893-2a9ae4f06c60" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2010.png"><img style="width:1200px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2010.png"/></a></figure><p id="c22c904c-370a-4b8c-834d-d49748e8b898" class="">
+</p><h3 id="6031aa96-35de-4050-a68c-a1e1a13f204d" class="">Benefits of Using Subplots</h3><ul id="a82506ea-1a17-4948-a163-a87e05c40b42" class="bulleted-list"><li style="list-style-type:disc"><strong>Organized Visualization</strong>: Subplots help in organizing multiple charts in a single figure, making it easier to compare different datasets or aspects of the data.</li></ul><ul id="fd929327-5099-42bc-933c-f7dfdf107961" class="bulleted-list"><li style="list-style-type:disc"><strong>Space Efficiency</strong>: Combining multiple charts into one figure saves space and is more efficient for reporting and presentations.</li></ul><ul id="2392485a-4aba-4bb6-baa0-f9e7c3111abc" class="bulleted-list"><li style="list-style-type:disc"><strong>Consistent Styling</strong>: Ensures consistent styling and scaling across all plots, which is important for comparative analysis.</li></ul></div></div><p id="79183e4e-68fc-46a5-a2d1-bc1ecc6a57a1" class="">
+</p><h2 id="0845da80-4f9f-4463-8af3-0a0ef023c04c" class="block-color-yellow_background">11. How does the design of a bubble plot differ from that of a standard scatter plot? Discuss the additional information conveyed by bubble plots.</h2><h3 id="c4ece941-9201-4e14-94a2-7268a0ce76b2" class="">Answer</h3><table id="cab14135-f712-4be8-8f8f-036e2bc6c1f2" class="simple-table"><thead class="simple-table-header"><tr id="0c640c5d-9caf-43e1-8e06-15e551990c0a"><th id="rH\K" class="simple-table-header-color simple-table-header" style="width:325.66668701171875px">Aspect</th><th id="oeJT" class="simple-table-header-color simple-table-header" style="width:325.66668701171875px">Scatter Plot</th><th id="p^EE" class="simple-table-header-color simple-table-header" style="width:325.66668701171875px">Bubble Plot</th></tr></thead><tbody><tr id="830c0a38-2fac-403d-90a5-f8f141015097"><th id="rH\K" class="simple-table-header-color simple-table-header" style="width:325.66668701171875px">Design</th><td id="oeJT" class="" style="width:325.66668701171875px">Visualizes two numerical variables.</td><td id="p^EE" class="" style="width:325.66668701171875px">Extends scatter plot by adding a third numerical variable through bubble size.</td></tr><tr id="e7af7ae3-7ca9-46f9-bad3-bc0f92588ec4"><th id="rH\K" class="simple-table-header-color simple-table-header" style="width:325.66668701171875px">Information Conveyed</th><td id="oeJT" class="" style="width:325.66668701171875px">Shows correlation between two variables.</td><td id="p^EE" class="" style="width:325.66668701171875px">Shows correlation between three variables.</td></tr><tr id="782e7e8a-c863-4146-8288-d069c790ff7e"><th id="rH\K" class="simple-table-header-color simple-table-header" style="width:325.66668701171875px">Additional Dimension</th><td id="oeJT" class="" style="width:325.66668701171875px">None</td><td id="p^EE" class="" style="width:325.66668701171875px">Bubble size represents a third variable.</td></tr><tr id="9249ddfc-a9de-47e9-9513-dea8c233050a"><th id="rH\K" class="simple-table-header-color simple-table-header" style="width:325.66668701171875px">Example Use Case</th><td id="oeJT" class="" style="width:325.66668701171875px">Correlating height and weight of individuals.</td><td id="p^EE" class="" style="width:325.66668701171875px">Showing the relationship between height, age, and weight of individuals.</td></tr></tbody></table><h3 id="71621e15-54c0-49f4-bdc8-12176c74e1b1" class="block-color-blue_background">Scatter Plot</h3><div id="eed60aa8-4d5d-47a9-8dbe-ac5a60c8caf7" class="column-list"><div id="620bb483-83f7-4b28-847f-1aedfa38f9d3" style="width:50%" class="column"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="3709e4dc-02e6-4951-99a5-3c7a89a46921" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample data
+x = np.random.rand(50)
+y = np.random.rand(50)
+
+# Create scatter plot
+plt.figure(figsize=(8, 6))
+plt.scatter(x, y, color=&#x27;blue&#x27;, alpha=0.5)
+plt.title(&#x27;Scatter Plot&#x27;)
+plt.xlabel(&#x27;X-axis&#x27;)
+plt.ylabel(&#x27;Y-axis&#x27;)
+plt.grid(True)
+plt.show()</code></pre></div><div id="309f5774-eeea-4dd0-a84c-f599b73ce541" style="width:50%" class="column"><figure id="7418c198-77e9-4f8b-812d-e3d1e24d2482" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2011.png"><img style="width:800px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2011.png"/></a></figure></div></div><h3 id="5586643a-ee10-43c8-9494-bdd01b597dd3" class="block-color-blue_background">Bubble Plot</h3><div id="49118003-5b18-4ce3-ab7c-ba04b5a75ee2" class="column-list"><div id="5e00856f-7f42-467c-8aeb-40233532a54c" style="width:50%" class="column"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="a925ed0a-4e95-40d0-b79e-7040b0c74e54" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample data
+x = np.random.rand(50)
+y = np.random.rand(50)
+# Third variable for bubble size
+z = np.random.rand(50) * 1000
+
+# Create bubble plot
+plt.figure(figsize=(8, 6))
+bubble = plt.scatter(x, y, s=z, color=&#x27;blue&#x27;, alpha=0.5)
+plt.title(&#x27;Bubble Plot&#x27;)
+plt.xlabel(&#x27;X-axis&#x27;)
+plt.ylabel(&#x27;Y-axis&#x27;)
+plt.grid(True)
+
+# Add a color bar to show the size scale
+plt.colorbar(bubble, label=&#x27;Bubble Size&#x27;)
+plt.show()</code></pre></div><div id="8b16498d-f65b-49fa-bb26-a8b81f165359" style="width:50%" class="column"><figure id="58bbe7c1-1981-440e-9377-7504dc8d9672" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2012.png"><img style="width:799.9768676757812px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2012.png"/></a></figure></div></div><p id="3efa9ae3-ce1b-4b55-ba1d-6800fbacbd50" class="">
+</p><h2 id="6ffa52ab-b852-4822-9b3e-74773a69503f" class="block-color-yellow_background">12. Explain the use of mathematical expressions in Matplotlib. How can you incorporate mathematical notation in plot titles, labels, or annotations?</h2><h3 id="3e32bb8b-9057-4e21-b2b6-1c35df203dec" class="">Answer</h3><h3 id="70f715fe-6f62-40bd-9e1c-5661e286cd09" class="block-color-blue_background">Use of Mathematical Expressions in Matplotlib</h3><ul id="37212179-0c56-45a7-ab92-2c897e167fa5" class="bulleted-list"><li style="list-style-type:disc">Matplotlib supports the inclusion of mathematical expressions in plots using TeX, one of the most popular typesetting systems, especially for typesetting mathematical formulas. </li></ul><ul id="21a7a849-8b38-4291-acf2-706457a7f2ac" class="bulleted-list"><li style="list-style-type:disc">This feature allows for the integration of complex mathematical notation into plot titles, labels, and annotations, enhancing the clarity and informativeness of scientific and technical visualizations.</li></ul><h3 id="615dedd5-85e8-40c9-8c56-3f0e61694976" class="block-color-blue_background">Incorporating Mathematical Notation</h3><p id="cd4d86d6-2e32-4fed-827a-5247bba48c6c" class="">To include mathematical expressions in Matplotlib plots, you need to wrap the TeX notation in dollar signs (<code>$</code>). Here’s how you can use mathematical notation in different parts of a plot:</p><h3 id="072600be-c3bd-4cce-8901-2c2d23190ccd" class="">1. Plot Titles</h3><ul id="f1f514eb-012d-41d2-a476-358ea28e10eb" class="bulleted-list"><li style="list-style-type:disc">You can add mathematical notation to the plot title using the <code>plt.title()</code> function.</li></ul><div id="886c00e5-681f-4644-bfdd-5aaf71ff7122" class="column-list"><div id="917469ca-521c-4507-a6ec-68cef04f7a37" style="width:50%" class="column"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="aff7e407-f165-4587-9d40-293dd7b4baef" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+plt.plot(x, y)
+plt.title(&#x27;Plot of $y = \sin(x)$&#x27;)
+plt.show()</code></pre></div><div id="4031abf4-b4c1-40e7-bf55-3d2942d17a95" style="width:50%" class="column"><figure id="1353e5e5-c1db-4496-96f0-5759ec4f6e9b" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2013.png"><img style="width:471.2384338378906px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2013.png"/></a></figure></div></div><h3 id="44ca3f1b-4678-4a7d-b726-77b95ee161f3" class="">2. Axis Labels</h3><ul id="e4111034-c782-4cb5-a10b-dadca103b673" class="bulleted-list"><li style="list-style-type:disc">Mathematical notation can be added to axis labels using the <code>plt.xlabel()</code> and <code>plt.ylabel()</code> functions.</li></ul><div id="a46b27f9-cb67-4942-a621-a7d3d1895b76" class="column-list"><div id="87941edf-6246-4cc0-9d17-8045c9b7e266" style="width:50%" class="column"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="2a65049a-3b37-45ea-b63c-280d85f5ab7b" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+plt.plot(x, y)
+plt.xlabel(&#x27;$x$&#x27;)
+plt.ylabel(&#x27;$\sin(x)$&#x27;)
+plt.show()</code></pre></div><div id="5eaccad5-538b-4d37-9236-da08741e28db" style="width:50%" class="column"><figure id="a447f5fa-a437-46dd-b0bb-eb2182d32739" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2014.png"><img style="width:640px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2014.png"/></a></figure></div></div><h3 id="d4f4ceba-9bb7-4ff4-8795-95e42dc871bf" class="">3. Annotations</h3><ul id="f6e21289-bc8e-465b-bac2-b91e4f94a830" class="bulleted-list"><li style="list-style-type:disc">Annotations can include mathematical notation by using the <code>plt.annotate()</code> function.</li></ul><div id="e4091054-021e-4269-93ca-f802b27890e6" class="column-list"><div id="43fa8286-37c8-4592-b023-b69de977f656" style="width:50%" class="column"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="540497da-a903-4f8c-8160-d81fda67d7ba" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+plt.plot(x, y)
+plt.title(&#x27;Plot of $y = \sin(x)$&#x27;)
+plt.xlabel(&#x27;$x$&#x27;)
+plt.ylabel(&#x27;$\sin(x)$&#x27;)
+
+# Annotate a specific point
+plt.annotate(&#x27;$\sin(\\frac{\pi}{2}) = 1$&#x27;, 
+             xy=(np.pi/2, 1), xytext=(np.pi/2 + 1, 0.8),
+             arrowprops=dict(facecolor=&#x27;black&#x27;, 
+                             shrink=0.05))
+plt.show()</code></pre></div><div id="b2a7440b-5e9e-4d4a-88ad-8510de5bd5c5" style="width:50%" class="column"><figure id="1357ca26-8c7a-42a7-bbfa-4d1b39b10fd3" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2015.png"><img style="width:471.2384338378906px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2015.png"/></a></figure></div></div><h3 id="42755e96-d5d6-4710-934d-bd0baf07ed8a" class="block-color-blue_background">Benefits of Using Mathematical Notation</h3><ul id="668ee7b5-b66d-4b46-8356-aff7f66417d5" class="bulleted-list"><li style="list-style-type:disc"><strong>Clarity</strong>: Using standard mathematical notation ensures that the plot is easily understood by those familiar with the notation, such as scientists, engineers, and mathematicians.</li></ul><ul id="f54ddcfd-3587-4264-b67e-d8065d73549c" class="bulleted-list"><li style="list-style-type:disc"><strong>Precision</strong>: Mathematical expressions provide a precise way to convey information that might be cumbersome or ambiguous if expressed in words.</li></ul><ul id="c0c95b23-5e5d-4deb-a0db-881472194ffd" class="bulleted-list"><li style="list-style-type:disc"><strong>Professional Presentation</strong>: Including mathematical notation enhances the professionalism of scientific and technical presentations and publications.</li></ul><p id="dbbc9072-7d0e-4346-b3a3-6871898b2fe0" class="">
+</p><h2 id="23296a5d-8975-4ccc-a6ad-add4df8e3265" class="block-color-yellow_background">13. What are the key elements of customizing plot aesthetics in Matplotlib? Discuss how text, colors, and legend customization can enhance the clarity of a plot.</h2><h3 id="869d75ee-a910-4ae7-a81a-36bdc5dd2812" class="">Answer</h3><ul id="b45a77c4-da43-4745-b64b-6c94a65a8081" class="bulleted-list"><li style="list-style-type:disc">Customizing plot aesthetics in Matplotlib involves various elements such as text, colors, and legends. </li></ul><ul id="0321cf8b-4dc6-46af-9fbb-513c4289ef98" class="bulleted-list"><li style="list-style-type:disc">These elements can significantly enhance the clarity, readability, and overall appeal of the plots. </li></ul><ul id="6115d6ec-b66d-494a-b8e0-68d93d726b47" class="bulleted-list"><li style="list-style-type:disc">Below, we discuss how each of these elements can be customized and their impact on plot quality.</li></ul><h3 id="2ece2066-6840-4db7-9558-541e340a9eeb" class="block-color-blue_background">Text Customization</h3><p id="85c2c342-97fb-413f-ab73-91ae84ebf6ae" class="">Text elements in Matplotlib include titles, axis labels, and annotations. Proper customization of these elements can make plots more informative and easier to understand.</p><h3 id="35b6eb5e-f4c3-4940-863c-03c1b29f3be6" class="">1. Titles</h3><p id="343424f6-26d1-458f-8a12-cd77fad2690e" class="">Titles help provide context for the plot, making it clear what the plot represents.</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="078f38c4-d3ee-40f3-88e4-aa0b498971c8" class="code"><code class="language-Python">plt.title(&#x27;Plot Title&#x27;, fontsize=16, fontweight=&#x27;bold&#x27;)</code></pre><h3 id="22850653-a723-47a9-8e14-6bb99ad14849" class="">2. Axis Labels</h3><p id="c6f707b8-3269-49bf-9391-3443f6af7a84" class="">Axis labels define what each axis represents, which is crucial for interpreting the data.</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="865332c3-3606-4e89-ac6b-78167edbe429" class="code"><code class="language-Python">plt.xlabel(&#x27;X-axis Label&#x27;, fontsize=14)
+plt.ylabel(&#x27;Y-axis Label&#x27;, fontsize=14)</code></pre><h3 id="f8ec9cec-c3c3-46af-b093-3580b1236881" class="">3. Annotations</h3><p id="e6cba522-940e-45fd-a58b-80505dd08a9d" class="">Annotations can highlight specific data points or regions, providing additional context or insights.</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="5bf1b3a4-ba3c-4ac8-a8a9-5cc97a789d43" class="code"><code class="language-Python">plt.annotate(&#x27;Annotation Text&#x27;, xy=(2, 3), xytext=(3, 4),
+             arrowprops=dict(facecolor=&#x27;black&#x27;, shrink=0.05))</code></pre><h3 id="d55324bd-a7de-436c-bda4-5140c2bb63d7" class="block-color-blue_background">Colour Customization</h3><p id="c61a7700-5ed4-43c8-9c75-ff78b2014070" class="">Colors are vital for distinguishing between different data series or categories in a plot. Using appropriate colors can enhance the visual appeal and make the plot more informative. </p><h3 id="9fc5e969-de77-4bb1-b7dc-48c8a9a1b404" class="">1. Consistent Colour Scheme</h3><p id="e050c980-f9ef-4f97-82d6-1e584a0e1e00" class="">Using a consistent color scheme helps in creating a visually cohesive plot.</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="ca306945-0873-4124-988c-71cdba4aa36e" class="code"><code class="language-Python">plt.plot(x, y1, color=&#x27;blue&#x27;)
+plt.plot(x, y2, color=&#x27;green&#x27;)</code></pre><h3 id="c668f8ed-e30c-457f-a812-4a94301889c1" class="">2. Colour Maps</h3><p id="8d1584da-e938-4b03-9746-6e918d806997" class="">Color maps can be used for plots like heatmaps or surface plots to represent data gradients.</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="1ad7411e-933c-4c09-8566-1bd77bc0b086" class="code"><code class="language-Python">plt.imshow(data, cmap=&#x27;viridis&#x27;)</code></pre><h3 id="1acb478b-1203-4412-9562-d6525c048f86" class="block-color-blue_background">Legend Customization</h3><p id="ec4cf0ba-2526-44bf-9344-5f018cefb25b" class="">Legends are crucial for identifying different data series in a plot. Properly customized legends improve the readability and interpretability of the plot.</p><h3 id="2d045de3-cca2-4072-9529-b72891c65bee" class="">1. Positioning</h3><p id="51673e51-04f6-4e5f-93d8-53eaf68f5328" class="">Placing the legend in an appropriate location ensures that it does not obscure important parts of the plot.</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="6f996491-d372-49ae-8335-8a8ce1b40703" class="code"><code class="language-Python">plt.legend(loc=&#x27;upper right&#x27;)</code></pre><h3 id="9ff388c3-3249-4171-9331-b002dc19dba8" class="">2. Custom Labels</h3><p id="29852230-5bf5-4d86-b0f2-9d2bd794f4b8" class="">Custom labels in the legend can provide clear and descriptive names for each data series.</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="c9aa16bd-dd23-44ed-b1d6-43345b5b76ce" class="code"><code class="language-Python">plt.plot(x, y1, label=&#x27;Data Series 1&#x27;)
+plt.plot(x, y2, label=&#x27;Data Series 2&#x27;)
+plt.legend()</code></pre><p id="cccef866-e5fd-419d-81e7-8a6a30318c1d" class="">
+</p><h3 id="9ca66d3a-e40f-43d2-9479-332db5e30147" class="block-color-blue_background">Example</h3><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="d5c5016c-1602-4190-ae82-e889df021911" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample data
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+y2 = np.cos(x)
+
+# Create plot
+plt.figure(figsize=(10, 6))
+
+# Plot data with custom colors
+plt.plot(x, y1, color=&#x27;blue&#x27;, label=&#x27;Sine Wave&#x27;)
+plt.plot(x, y2, color=&#x27;green&#x27;, label=&#x27;Cosine Wave&#x27;)
+
+# Add titles and labels
+plt.title(&#x27;Sine and Cosine Waves&#x27;, fontsize=16, fontweight=&#x27;bold&#x27;)
+plt.xlabel(&#x27;X-axis&#x27;, fontsize=14)
+plt.ylabel(&#x27;Y-axis&#x27;, fontsize=14)
+
+# Add annotations
+plt.annotate(&#x27;Local Max&#x27;, xy=(1.57, 1), xytext=(3, 1.5),
+             arrowprops=dict(facecolor=&#x27;black&#x27;, shrink=0.05),
+             bbox=dict(boxstyle=&quot;round,pad=0.3&quot;, edgecolor=&quot;black&quot;, facecolor=&quot;white&quot;))
+
+# Customize legend
+plt.legend(loc=&#x27;upper right&#x27;)
+
+# Adjust layout to ensure everything fits
+plt.tight_layout()
+
+# Show plot
+plt.grid(True)
+plt.show()</code></pre><figure id="95710554-bcc9-4d1a-82a1-fe312822ac99" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2016.png"><img style="width:624px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2016.png"/></a></figure><p id="f0cbb276-44ea-4a32-89e8-d0289f232534" class="">
+</p><h2 id="d95ef35f-bcbd-4596-8e8a-b2c8bdd5147d" class="block-color-yellow_background">14. Create a radar chart in Matplotlib to visualize the performance metrics of different departments in a company. What are the key steps and considerations in designing a radar chart?</h2><h3 id="2f9980c0-78d8-4593-a2f8-33690ed65cdf" class="">Answer</h3><p id="3c126d65-fb91-4e18-ad8e-bd01db919419" class="">Radar charts, also known as spider or web charts, are used to display multivariate data in a way that is easy to understand. </p><h3 id="4c64747b-206f-4134-b714-1038d7e62508" class="block-color-blue_background">Key Steps</h3><ol type="1" id="a907c7f9-c924-46ff-8ca5-46ad5a3bf272" class="numbered-list" start="1"><li><strong>Prepare the Data</strong>: Organize the performance metrics for the different departments you want to visualize.</li></ol><ol type="1" id="fa259106-c491-4e28-a7e2-fb7791ad4d1a" class="numbered-list" start="2"><li><strong>Set Up the Radar Chart</strong>: Define the number of variables (metrics) and the number of groups (departments).</li></ol><ol type="1" id="b1987437-0e36-41c0-b11f-de79de6cc1ec" class="numbered-list" start="3"><li><strong>Create the Chart</strong>: Plot the data on a polar coordinate system.</li></ol><ol type="1" id="834e1c11-edeb-48c5-a73d-001dd54c3134" class="numbered-list" start="4"><li><strong>Add Customization</strong>: Include titles, labels, and other customizations to enhance readability.</li></ol><h3 id="3324156f-e0de-4361-9d05-0a012a5bc119" class="block-color-blue_background">Considerations</h3><ul id="46a6ca18-d32e-488a-acda-32a0340fea7c" class="bulleted-list"><li style="list-style-type:disc"><strong>Limit the Number of Variables</strong>: Keep the number of metrics to a manageable number to avoid clutter.</li></ul><ul id="216df86e-aaa9-4ca4-941f-4a1eee3e5fcc" class="bulleted-list"><li style="list-style-type:disc"><strong>Use Consistent Scales</strong>: Ensure all metrics are on the same scale for accurate comparison.</li></ul><ul id="01ab410f-3870-4cc1-a0df-5b59b66b273a" class="bulleted-list"><li style="list-style-type:disc"><strong>Distinct Colors</strong>: Use different colors for different departments to make the chart easy to read.</li></ul><ul id="92babb24-3dc7-442b-9530-53363b578ac2" class="bulleted-list"><li style="list-style-type:disc"><strong>Labels and Titles</strong>: Include clear labels and titles to provide context.</li></ul><p id="97e85641-25e1-4d44-ba82-8b573bce096d" class="">
+</p><h3 id="50136e3a-b4cc-4c0e-ba4a-274c6c774380" class="block-color-blue_background">Example</h3><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="935559cc-4a80-4c51-b897-cc00893d5124" class="code"><code class="language-Python">import numpy as np
+import matplotlib.pyplot as plt
+
+# Sample data
+departments = [&#x27;HR&#x27;, &#x27;Finance&#x27;, &#x27;IT&#x27;, &#x27;Marketing&#x27;, &#x27;Sales&#x27;]
+metrics = [&#x27;Efficiency&#x27;, &#x27;Quality&#x27;, &#x27;Commitment&#x27;, &#x27;Conduct&#x27;, &#x27;Cooperation&#x27;]
+
+# Performance metrics for each department
+performance = {
+    &#x27;HR&#x27;: [4, 5, 4, 3, 4],
+    &#x27;Finance&#x27;: [5, 4, 4, 4, 5],
+    &#x27;IT&#x27;: [3, 4, 3, 5, 4],
+    &#x27;Marketing&#x27;: [4, 3, 5, 4, 3],
+    &#x27;Sales&#x27;: [5, 5, 4, 3, 5]
+}
+
+# Number of variables
+num_vars = len(metrics)
+
+# Compute angle of each axis
+angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
+
+# Complete the loop
+angles += angles[:1]
+
+# Set up the figure
+fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
+
+# Plot each department&#x27;s performance
+for department, values in performance.items():
+    values += values[:1]  # Complete the loop
+    ax.plot(angles, values, label=department)
+    ax.fill(angles, values, alpha=0.25)
+
+# Add labels
+ax.set_yticklabels([])
+ax.set_xticks(angles[:-1])
+ax.set_xticklabels(metrics)
+
+# Add title and legend
+plt.title(&#x27;Performance Metrics of Different Departments&#x27;, size=20, color=&#x27;black&#x27;, y=1.1)
+ax.legend(loc=&#x27;upper right&#x27;, bbox_to_anchor=(1.1, 1.1))
+
+plt.show()</code></pre><figure id="7af730b7-5dd7-47ac-b3a9-08b8bf5455b6" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2017.png"><img style="width:624px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2017.png"/></a></figure><p id="71333f5a-af0a-48d4-b00b-88c4a46f2945" class="">
+</p><h2 id="5dc12d68-f9d6-4656-b5d5-278ddd7dcfcf" class="block-color-yellow_background">15. How can GridSpec be used to manage complex subplot layouts in Matplotlib? Provide an example of a figure with a non-uniform grid of subplots.</h2><h3 id="e928d626-8ed9-45cf-a343-9cf56763c58c" class="">Answer</h3><h3 id="aa858e2c-6521-441c-8e24-a97a5b0a485c" class="block-color-blue_background">Using GridSpec to Manage Complex Subplot Layouts</h3><p id="7f07dd7c-4842-4ba2-90c2-daf618169d03" class=""><code>GridSpec</code> allows for the creation of subplots that span multiple rows and columns, giving you control over the size and position of each subplot within a figure. </p><p id="773f51a6-b81e-4522-b9e2-4510bc3d6940" class="">This flexibility makes it easier to manage complex layouts that cannot be achieved with the default <code>plt.subplots()</code> method.<br/><br/>Below is an example demonstrating how to create a non-uniform grid of subplots using <br/><code>GridSpec</code>:</p><p id="4b05c5dc-72e6-4dda-aa9a-62f2e0a9b775" class="">
+</p><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="c257ee3f-017b-4b49-81f4-b5afd1619e79" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
+import numpy as np
+
+# Sample data
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+y2 = np.cos(x)
+data = np.random.randn(1000)
+
+# Create GridSpec
+fig = plt.figure(figsize=(12, 10))
+gs = gridspec.GridSpec(3, 3)
+
+# Main plot (occupying a 2x2 grid)
+ax1 = fig.add_subplot(gs[:2, :2])
+ax1.plot(x, y1)
+ax1.set_title(&#x27;Main Plot (Sine Wave)&#x27;)
+
+# Auxiliary plots
+ax2 = fig.add_subplot(gs[0, 2])
+ax2.plot(x, y2, &#x27;r&#x27;)
+ax2.set_title(&#x27;Aux Plot 1 (Cosine Wave)&#x27;)
+
+ax3 = fig.add_subplot(gs[1, 2])
+ax3.hist(data, bins=30, color=&#x27;g&#x27;, alpha=0.75)
+ax3.set_title(&#x27;Aux Plot 2 (Histogram)&#x27;)
+
+ax4 = fig.add_subplot(gs[2, :])
+ax4.scatter(x, y1, color=&#x27;b&#x27;, alpha=0.75)
+ax4.set_title(&#x27;Aux Plot 3 (Scatter Plot)&#x27;)
+
+# Adjust layout
+plt.tight_layout()
+plt.show()</code></pre><figure id="685aa29d-73ab-4e22-ae5d-039ab7b76572" class="image"><a href="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2018.png"><img style="width:624px" src="IA3%20Important%20(B%20Section)%2065967f2414e4461c9cc1beee344ba9bc/Figure_1%2018.png"/></a></figure><p id="44a7b889-6452-4601-8b4f-6e383bdfb44f" class="">
+</p><h2 id="cd620420-a44d-463c-bd54-093465e3b1fd" class="block-color-yellow_background">16. Illustrate how to save figures in different formats using Matplotlib. What are the pros and cons of various file formats like PNG, PDF, and SVG?</h2><h3 id="43019120-1ebf-4bdc-afba-cc2d54671b6c" class="">Answer</h3><h3 id="1abbd26c-b492-43a5-bfd7-23ccf275a26d" class="block-color-blue_background">Illustrating How to Save Figures in Different Formats Using Matplotlib</h3><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="f3734233-abec-4b92-b0f7-45604d6fbdae" class="code"><code class="language-Python">import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample data
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# Create a plot
+plt.figure(figsize=(8, 6))
+plt.plot(x, y, label=&#x27;Sine Wave&#x27;)
+plt.title(&#x27;Sine Wave Plot&#x27;)
+plt.xlabel(&#x27;X-axis&#x27;)
+plt.ylabel(&#x27;Y-axis&#x27;)
+plt.legend()
+plt.grid(True)
+
+# Save the plot in different formats
+plt.savefig(&#x27;sine_wave.png&#x27;)
+plt.savefig(&#x27;sine_wave.pdf&#x27;)
+plt.savefig(&#x27;sine_wave.svg&#x27;)
+
+# Show the plot
+plt.show()</code></pre><p id="ad634322-6cd9-4f47-b74a-9bb2a07fc61c" class="">
+</p><p id="0ac1e60e-784b-40a4-9486-2cb27fdd5296" class="">[Refer Q7 for pros and cons]</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
